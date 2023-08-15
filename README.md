@@ -1,5 +1,5 @@
 # structuralchange
-Paquete de R para generar indicadores de cambio estructural. 
+Paquete de R para generar indicadores de cambio estructural: Índice Herfindahl-Hirschman (IHH), Índice Theil, Índice Gini e Índice de Complejidad Económica (ICE). 
 
 ## Contenido
 Por el momento, se puede descargar el R Script con la función para calcular la matriz de Ventajas Comparativas Reveladas (RCA, por sus siglas en inglés): [rca.R](/rca.R). Esta función permite calcular la RCA a partir de cualquier objeto de clase *data.frame* o *tibble* que contenga tres columnas. La primera columna debe presentar los **nombres o códigos de las localidades** a estudiar; la segunda columna, información de los **códigos del flujo** a estudiar (e.g., SIC para empleo o HS para exportaciones); la tercera columna, información de la **cantidad del flujo** para todos los pares localidad-flujo. [^1]

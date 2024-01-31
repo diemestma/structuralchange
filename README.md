@@ -1,8 +1,8 @@
 # structuralchange
-Paquete de R para generar indicadores de cambio estructural: Índice Herfindahl-Hirschman (IHH), Índice Theil, Índice Gini e Índice de Complejidad Económica (ICE). 
+RStudio package to generate structural change indicators: Herfindahl-Hirschman Index (HHI), Theil Index, Gini Index and Economic Complexity Index (ICE).
 
 ## Contenido
-Por el momento, se puede descargar el R Script con la función para calcular la matriz de Ventajas Comparativas Reveladas (RCA, por sus siglas en inglés): [rca.R](/rca.R).[^1] Esta función permite calcular la RCA a partir de cualquier objeto de clase *data.frame* o *tibble* que contenga tres columnas.[^2] Con esta función se elaborará el ICE.
+At the moment, you can download the R Script with the function to calculate the Revealed Comparative Advantage (RCA) matrix: [rca.R](/rca.R).[^1] This function allows calculate the RCA from any object of class *data.frame* or *tibble* that contains three columns.[^2] The output of this function will be used to estimate the ICE.
 
-[^1]: Nota: para la construcción de esta función nos apoyamos, principalmente, de dos fuentes: **1)** Mealy, P., Farmer, J. D. & Teytelboym, A. (2019). Interpreting economic complexity. *Science Advances*. 5(1). https://doi.org/10.1126/sciadv.aau1705; **2)** la función *balassa_index* del paquete [economiccomplexity](https://github.com/pachadotdev/economiccomplexity/tree/master)
-[^2]: La primera columna debe presentar los **nombres o códigos de las localidades** a estudiar; la segunda columna, información de los **códigos del flujo** a estudiar (e.g., SIC para empleo o HS para exportaciones); la tercera columna, información de la **cantidad del flujo** para todos los pares localidad-flujo.
+[^1]: Note: to construct this function we rely mainly on two sources: **1)** Mealy, P., Farmer, J. D. & Teytelboym, A. (2019). Interpreting economic complexity. *Science Advances*. 5(1). https://doi.org/10.1126/sciadv.aau1705; **2)** the *balassa_index* function from the package [economiccomplexity](https://github.com/pachadotdev/economiccomplexity/tree/master)
+[^2]: The first column must present the **names or codes of the localities** to be studied; the second column, information on the **flow codes** to be studied (e.g., SIC for employment or HS for exports); the third column, **flow quantity** information for all locality-flow pairs.
